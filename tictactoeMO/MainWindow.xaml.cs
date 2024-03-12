@@ -61,15 +61,16 @@ namespace tictactoe
             var button = sender as Button;
             button.Content = IsPlayerTurn ? "O" : "X";
             button.Background = IsPlayerTurn ? Brushes.Peru : Brushes.Plum;
-            Counter++;
-            if (Counter > 15)
+            for (int i = 0; i < 1; i++)
             {
-                MessageBox.Show("Koniec gry", "Koniec", MessageBoxButton.OK);
-                NewGame();
-                return;
+                if (btns[i].Content != "" && btns[i+1].Content != "" && btns[i+2].Content != "" && btns[i + 3].Content != "" && btns[i+4].Content != "" && btns[i + 5].Content != "" && btns[i+6].Content != "" && btns[i + 7].Content != "" && btns[i+8].Content != "" && btns[i + 9].Content != "" && btns[i+10].Content != "" && btns[i + 11].Content != "" && btns[i+12].Content != "" && btns[i + 13].Content != "" && btns[i+14].Content != "" && btns[i + 15].Content != "")
+                {
+                    MessageBox.Show("Remis");
+                    NewGame();
+                    break;
+                }
             }
-            
-            
+
             check();
             IsPlayerTurn = !IsPlayerTurn;
         }
@@ -79,13 +80,13 @@ namespace tictactoe
             {
                 if (btns[row].Content == "O" && btns[row+1].Content == "O" && btns[row+2].Content == "O" && btns[row+3].Content == "O")
                 {
-                    MessageBox.Show("Strike!");
+                    MessageBox.Show("Wygrywa O");
                     NewGame();
                     break;
                 }
                 if (btns[row].Content == "X" && btns[row+1].Content == "X" && btns[row+2].Content == "X" && btns[row+3].Content == "X")
                 {
-                    MessageBox.Show("Strike!");
+                    MessageBox.Show("Wygrywa X");
                     NewGame();
                     break;
                 }
@@ -94,13 +95,28 @@ namespace tictactoe
             {
                 if (btns[column].Content == "O" && btns[column + 4].Content == "O" && btns[column + 8].Content == "O" && btns[column + 12].Content == "O")
                 {
-                    MessageBox.Show("Strike Column!");
+                    MessageBox.Show("Wygrywa O");
                     NewGame();
                     break;
                 }
                 if (btns[column].Content == "X" && btns[column + 4].Content == "X" && btns[column + 8].Content == "X" && btns[column + 12].Content == "X")
                 {
-                    MessageBox.Show("Strike Column!");
+                    MessageBox.Show("Wygrywa X");
+                    NewGame();
+                    break;
+                }
+            }
+            for (int slant = 0; slant < 1; slant++)
+            {
+                if (( btns[0].Content == "O" && btns[5].Content == "O" && btns[10].Content == "O" && btns[15].Content == "O") || (btns[3].Content == "O" && btns[6].Content == "O" && btns[9].Content == "O" && btns[12].Content == "O"))
+                {
+                    MessageBox.Show("Wygrywa O");
+                    NewGame();
+                    break;
+                }
+                else if((btns[0].Content == "X" && btns[5].Content == "X" && btns[10].Content == "X" && btns[15].Content == "X") || (btns[3].Content == "X" && btns[6].Content == "X" && btns[9].Content == "X" && btns[12].Content == "X"))
+                {
+                    MessageBox.Show("Wygrywa X");
                     NewGame();
                     break;
                 }
