@@ -21,9 +21,7 @@ namespace tictactoe
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string imie = "";
         private Button[] btns = new Button[16];
-        private int Counter { get; set; }
         public bool IsPlayerTurn { get; set; }
         public MainWindow()
         {
@@ -35,7 +33,6 @@ namespace tictactoe
         private void NewGame()
         {
             IsPlayerTurn = true;
-            Counter = 0;
             ClearBtnArray();
         }
         private void ClearBtnArray()

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\III-TIE_23\\Desktop\\tictactoeMO\\tictactoeMO\\tictactoeMO.csproj",
+      "projectUniqueName": "C:\\Users\\III-TIE_23\\Desktop\\Kys\\tictactoeMO\\tictactoeMO\\tictactoeMO.csproj",
       "projectName": "tictactoeMO",
-      "projectPath": "C:\\Users\\III-TIE_23\\Desktop\\tictactoeMO\\tictactoeMO\\tictactoeMO.csproj",
+      "projectPath": "C:\\Users\\III-TIE_23\\Desktop\\Kys\\tictactoeMO\\tictactoeMO\\tictactoeMO.csproj",
       "packagesPath": "C:\\Users\\III-TIE_23\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\III-TIE_23\\Desktop\\tictactoeMO\\tictactoeMO\\obj\\",
+      "outputPath": "C:\\Users\\III-TIE_23\\Desktop\\Kys\\tictactoeMO\\tictactoeMO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\III-TIE_23\\AppData\\Roaming\\NuGet\\NuGet.Config",
