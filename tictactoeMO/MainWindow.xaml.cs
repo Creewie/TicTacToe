@@ -22,13 +22,21 @@ namespace tictactoe
     public partial class MainWindow : Window
     {
         private Button[] btns = new Button[16];
-        public bool IsPlayerTurn { get; set; }
+        private TextBlock turn;
+        private bool isPlayerTurn;
+        public bool IsPlayerTurn { get => isPlayerTurn; set {
+                isPlayerTurn = value;
+                if (turn != null) turn.Text = value ? "Kolej: O" : "Kolej: X";
+            }
+        }
         public MainWindow()
         {
             InitializeComponent();
+            turn = (TextBlock)FindName("tura");
             InitializebtnArray();
             NewGame();
             check();
+            //turn.Text = "Kolej: O";
         }
         private void NewGame()
         {
@@ -39,7 +47,7 @@ namespace tictactoe
         {
             for (int i = 0; i < btns.Length; i++)
             {
-                btns[i].Background = Brushes.Tan;
+                btns[i].Background = Brushes.AliceBlue;
                 btns[i].Content = String.Empty;
             }
         }
@@ -48,7 +56,7 @@ namespace tictactoe
             for (int i = 0; i < btns.Length; i++)
             {
                 btns[i] = (Button)FindName($"btn{i + 1}") as Button;
-                btns[i].Background = Brushes.Tan;
+                btns[i].Background = Brushes.AliceBlue;
                 btns[i].Content = "?";
             }
         }
@@ -57,7 +65,7 @@ namespace tictactoe
         {
             var button = sender as Button;
             button.Content = IsPlayerTurn ? "O" : "X";
-            button.Background = IsPlayerTurn ? Brushes.Peru : Brushes.Plum;
+            button.Background = IsPlayerTurn ? Brushes.Coral : Brushes.MediumPurple;
             for (int i = 0; i < 1; i++)
             {
                 if (btns[i].Content != "" && btns[i+1].Content != "" && btns[i+2].Content != "" && btns[i + 3].Content != "" && btns[i+4].Content != "" && btns[i + 5].Content != "" && btns[i+6].Content != "" && btns[i + 7].Content != "" && btns[i+8].Content != "" && btns[i + 9].Content != "" && btns[i+10].Content != "" && btns[i + 11].Content != "" && btns[i+12].Content != "" && btns[i + 13].Content != "" && btns[i+14].Content != "" && btns[i + 15].Content != "")
@@ -70,6 +78,8 @@ namespace tictactoe
 
             check();
             IsPlayerTurn = !IsPlayerTurn;
+
+            
         }
         private void check()
         {

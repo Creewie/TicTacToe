@@ -6,8 +6,12 @@
         xmlns:local="clr-namespace:tictactoe"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="TicTacToe" Height="600" Width="600">
-    <Grid>
+        Title="TicTacToe" Height="700" Width="655">
+    <StackPanel>
+        <Border BorderBrush="black" BorderThickness="0 0 0 1">
+            <TextBlock x:Name="tura" Text="Tura:" HorizontalAlignment="Center" Margin="0,5,0,0" FontWeight="Bold" FontSize="22" FontFamily="Corbel Light" VerticalAlignment="Center"/>
+        </Border>
+        <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
@@ -35,8 +39,7 @@
         <Button x:Name="btn13" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Row="3" FontSize="56" Click="btn_Click"/>
         <Button x:Name="btn14" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="1" Grid.Row="3" FontSize="56" Click="btn_Click"/>
         <Button x:Name="btn15" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" FontSize="56" Grid.Column="2" Grid.Row="3" Click="btn_Click"/>
-        <Button x:Name="btn16" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" FontSize="56" Grid.Column="3" Grid.Row="3" Click="btn_Click"/>
-
-
+            <Button x:Name="btn16" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" FontSize="56" Grid.Column="3" Grid.Row="3" Click="btn_Click"/>
     </Grid>
+    </StackPanel>
 </Window>

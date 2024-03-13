@@ -58,3 +58,23 @@ C:\Users\III-TIE_23\Desktop\Kys\tictactoeMO\tictactoeMO\obj\Debug\net6.0-windows
 C:\Users\III-TIE_23\Desktop\Kys\tictactoeMO\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.pdb
 C:\Users\III-TIE_23\Desktop\Kys\tictactoeMO\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.genruntimeconfig.cache
 C:\Users\III-TIE_23\Desktop\Kys\tictactoeMO\tictactoeMO\obj\Debug\net6.0-windows\ref\tictactoeMO.dll
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\bin\Debug\net6.0-windows\tictactoeMO.exe
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\bin\Debug\net6.0-windows\tictactoeMO.deps.json
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\bin\Debug\net6.0-windows\tictactoeMO.runtimeconfig.json
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\bin\Debug\net6.0-windows\tictactoeMO.dll
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\bin\Debug\net6.0-windows\tictactoeMO.pdb
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO_MarkupCompile.cache
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO_MarkupCompile.lref
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.g.resources
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.AssemblyInfoInputs.cache
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.AssemblyInfo.cs
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.csproj.CoreCompileInputs.cache
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.dll
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\refint\tictactoeMO.dll
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.pdb
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\tictactoeMO.genruntimeconfig.cache
+C:\Users\uczen\Desktop\Nowy folder\tictactoe\tictactoeMO\obj\Debug\net6.0-windows\ref\tictactoeMO.dll
