@@ -6,40 +6,49 @@
         xmlns:local="clr-namespace:tictactoe"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="TicTacToe" Height="700" Width="655">
+        Title="TicTacToe" Height="720" Width="655">
     <StackPanel>
         <Border BorderBrush="black" BorderThickness="0 0 0 1">
-            <TextBlock x:Name="tura" Text="Tura:" HorizontalAlignment="Center" Margin="0,5,0,0" FontWeight="Bold" FontSize="22" FontFamily="Corbel Light" VerticalAlignment="Center"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" x:Name="wynikX" Text="X: 0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="22" FontFamily="Corbel Light"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" x:Name="tura" Text="Tura:" FontWeight="Bold" FontSize="22" FontFamily="Corbel Light"/>
+                <TextBlock Grid.Column="2" HorizontalAlignment="Right" x:Name="wynikO" Text="O: 0" FontSize="22" FontFamily="Corbel Light" RenderTransformOrigin="0.517,-0.037"/>
+            </Grid>
         </Border>
         <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Button x:Name="btn1" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" FontSize="50" Click="btn_Click"/>
-        <Button x:Name="btn2" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="1" FontSize="50" Click="btn_Click" />
-        <Button x:Name="btn3" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="2" FontSize="50" Click="btn_Click" />
-        <Button x:Name="btn4" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="3" FontSize="50" Click="btn_Click" />
-        <Button x:Name="btn5" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Row="1" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn6" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="1" Grid.Row="1" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn7" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="2" Grid.Row="1" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn8" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="3" Grid.Row="1" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn9" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Row="2" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn10" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="1" Grid.Row="2" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn11" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="2" Grid.Row="2" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn12" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="3" Grid.Row="2" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn13" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Row="3" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn14" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="1" Grid.Row="3" FontSize="56" Click="btn_Click"/>
-        <Button x:Name="btn15" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" FontSize="56" Grid.Column="2" Grid.Row="3" Click="btn_Click"/>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btn1" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" FontSize="50" Click="btn_Click"/>
+            <Button x:Name="btn2" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="1" FontSize="50" Click="btn_Click" />
+            <Button x:Name="btn3" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="2" FontSize="50" Click="btn_Click" />
+            <Button x:Name="btn4" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="3" FontSize="50" Click="btn_Click" />
+            <Button x:Name="btn5" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Row="1" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn6" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="1" Grid.Row="1" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn7" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="2" Grid.Row="1" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn8" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="3" Grid.Row="1" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn9" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Row="2" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn10" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="1" Grid.Row="2" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn11" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="2" Grid.Row="2" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn12" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="3" Grid.Row="2" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn13" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Row="3" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn14" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" Grid.Column="1" Grid.Row="3" FontSize="56" Click="btn_Click"/>
+            <Button x:Name="btn15" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" FontSize="56" Grid.Column="2" Grid.Row="3" Click="btn_Click"/>
             <Button x:Name="btn16" Content="?" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="150" Margin="5" FontSize="56" Grid.Column="3" Grid.Row="3" Click="btn_Click"/>
-    </Grid>
+        </Grid>
     </StackPanel>
 </Window>

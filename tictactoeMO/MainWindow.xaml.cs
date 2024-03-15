@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +24,8 @@ namespace tictactoe
     {
         private Button[] btns = new Button[16];
         private TextBlock turn;
+        private TextBlock scoreX;
+        private TextBlock scoreO;
         private bool isPlayerTurn;
         public bool IsPlayerTurn { get => isPlayerTurn; set {
                 isPlayerTurn = value;
@@ -33,6 +36,8 @@ namespace tictactoe
         {
             InitializeComponent();
             turn = (TextBlock)FindName("tura");
+            scoreX = (TextBlock)FindName("wynikX");
+            scoreO = (TextBlock)FindName("wynikO");
             InitializebtnArray();
             NewGame();
             check();
@@ -81,6 +86,17 @@ namespace tictactoe
 
             
         }
+        int wynikXlicznik = 0;
+        int wynikOlicznik = 0;
+            
+        public int WynikX
+        {
+            get => wynikXlicznik;
+            set { wynikXlicznik = value; scoreX.Text = $"X: {wynikXlicznik}"; }
+        }
+
+        public int WynikO { get => wynikOlicznik; set { wynikOlicznik = value; scoreO.Text = $"O: {wynikOlicznik}"; } }
+
         private void check()
         {
             for (int row = 0; row <= btns.Length-4; row+=4)
@@ -89,12 +105,14 @@ namespace tictactoe
                 {
                     MessageBox.Show("Wygrywa O");
                     NewGame();
+                    WynikO++;
                     break;
                 }
                 if (btns[row].Content == "X" && btns[row+1].Content == "X" && btns[row+2].Content == "X" && btns[row+3].Content == "X")
                 {
                     MessageBox.Show("Wygrywa X");
                     NewGame();
+                    WynikX++;
                     break;
                 }
             }
@@ -104,12 +122,14 @@ namespace tictactoe
                 {
                     MessageBox.Show("Wygrywa O");
                     NewGame();
+                    WynikO++;
                     break;
                 }
                 if (btns[column].Content == "X" && btns[column + 4].Content == "X" && btns[column + 8].Content == "X" && btns[column + 12].Content == "X")
                 {
                     MessageBox.Show("Wygrywa X");
                     NewGame();
+                    WynikX++;
                     break;
                 }
             }
@@ -119,12 +139,14 @@ namespace tictactoe
                 {
                     MessageBox.Show("Wygrywa O");
                     NewGame();
+                    WynikO++;
                     break;
                 }
                 else if((btns[0].Content == "X" && btns[5].Content == "X" && btns[10].Content == "X" && btns[15].Content == "X") || (btns[3].Content == "X" && btns[6].Content == "X" && btns[9].Content == "X" && btns[12].Content == "X"))
                 {
                     MessageBox.Show("Wygrywa X");
                     NewGame();
+                    WynikX++;
                     break;
                 }
             }

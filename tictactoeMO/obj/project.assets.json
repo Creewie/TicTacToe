@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\uczen\\.nuget\\packages\\": {}
+    "C:\\Users\\III-TIE_23\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\uczen\\Desktop\\Nowy folder\\tictactoe\\tictactoeMO\\tictactoeMO.csproj",
+      "projectUniqueName": "C:\\Users\\III-TIE_23\\Downloads\\TicTacToe\\tictactoeMO\\tictactoeMO.csproj",
       "projectName": "tictactoeMO",
-      "projectPath": "C:\\Users\\uczen\\Desktop\\Nowy folder\\tictactoe\\tictactoeMO\\tictactoeMO.csproj",
-      "packagesPath": "C:\\Users\\uczen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uczen\\Desktop\\Nowy folder\\tictactoe\\tictactoeMO\\obj\\",
+      "projectPath": "C:\\Users\\III-TIE_23\\Downloads\\TicTacToe\\tictactoeMO\\tictactoeMO.csproj",
+      "packagesPath": "C:\\Users\\III-TIE_23\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\III-TIE_23\\Downloads\\TicTacToe\\tictactoeMO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\uczen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\III-TIE_23\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
